@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>js</title>
+  </head>
+  <body>
+    <script src="./js/task-1.js"></script>
+    <script src="./js/task-2.js"></script>
+    <script src="./js/task-3.js"></script>
+  </body>
+</html>
+
+
+"use strict";
+
+function getElementWidth(content, padding, border) {
+    let contentSize = Number.parseFloat(content);
+    let paddingSize = Number.parseFloat(padding);
+    let borderSize = Number.parseFloat(border);
+  return contentSize + paddingSize * 2 + borderSize * 2;
+}
+
+getElementWidth();
+
+console.log(getElementWidth("50px", "8px", "4px")); // 74
+console.log(getElementWidth("60px", "12px", "8.5px")); // 101
+console.log(getElementWidth("200px", "0px", "0px")); // 200
